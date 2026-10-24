@@ -1,0 +1,7 @@
+zig-out/
+.zig-cache/
+dist/
+# Real Qalam pages (contain grades).
+tests/fixtures/qalam/
+# Real LMS replies and Qalam pages hold personal data: kept local only.
+tests/fixtures/lms/

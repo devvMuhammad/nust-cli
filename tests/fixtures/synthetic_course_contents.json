@@ -1,0 +1,78 @@
+[
+  {
+    "id": 9001,
+    "name": "Week 1: Introduction",
+    "visible": 1,
+    "modules": [
+      {
+        "id": 70001,
+        "name": "Lecture 1 slides",
+        "modname": "resource",
+        "visible": 1,
+        "uservisible": true,
+        "url": "{BASE}/mod/resource/view.php?id=70001",
+        "contents": [
+          {
+            "type": "file",
+            "filename": "lecture1.pdf",
+            "filepath": "/",
+            "filesize": 32,
+            "fileurl": "{BASE}/webservice/pluginfile.php/1/mod_resource/content/1/lecture1.pdf",
+            "mimetype": "application/pdf",
+            "timemodified": 1789000000
+          }
+        ]
+      },
+      {
+        "id": 70002,
+        "name": "Spacer",
+        "modname": "label",
+        "visible": 1,
+        "contents": []
+      },
+      {
+        "id": 70003,
+        "name": "Reading list",
+        "modname": "url",
+        "visible": 1,
+        "contents": [
+          { "type": "url", "filename": "Reading list", "fileurl": "https://example.org/reading", "filesize": 0 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9002,
+    "name": "Week 2",
+    "visible": 1,
+    "modules": [
+      {
+        "id": 70004,
+        "name": "Lab handouts",
+        "modname": "folder",
+        "visible": 1,
+        "uservisible": true,
+        "contents": [
+          {
+            "type": "file",
+            "filename": "lecture1.pdf",
+            "filepath": "/",
+            "filesize": 32,
+            "fileurl": "{BASE}/webservice/pluginfile.php/2/mod_folder/content/0/lecture1.pdf",
+            "mimetype": "application/pdf",
+            "timemodified": 1789100000
+          },
+          {
+            "type": "file",
+            "filename": "lab2.ipynb",
+            "filepath": "/",
+            "filesize": 30,
+            "fileurl": "{BASE}/webservice/pluginfile.php/2/mod_folder/content/0/lab2.ipynb",
+            "mimetype": "application/json",
+            "timemodified": 1789100000
+          }
+        ]
+      }
+    ]
+  }
+]
