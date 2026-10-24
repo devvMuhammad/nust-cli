@@ -31,7 +31,7 @@ pub fn login(app: *App, c: *Clients, sys: Systems, lms_username: ?[]const u8) Fa
     const store = try c.store();
     const username = std.mem.trim(u8, app.getenv("NUST_USERNAME") orelse blk: {
         if (!app.interactive) return app.fail("NO_TERMINAL", .usage, "no terminal to ask for your username; set NUST_USERNAME (and NUST_PASSWORD)", .{});
-        break :blk try app.prompt("NUST username (e.g. 123456 or your Qalam login): ", false);
+        break :blk try app.prompt("NUST username (e.g. brana.bscs69seecs): ", false);
     }, " \t");
     if (username.len == 0) return app.fail("USAGE", .usage, "a username is required", .{});
     const password = app.getenv("NUST_PASSWORD") orelse blk: {
