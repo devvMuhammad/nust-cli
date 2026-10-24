@@ -4,15 +4,19 @@ Check Qalam and the NUST LMS from your terminal. One small program, about 1 MB.
 
 ## Install
 
-You need [Zig 0.17](https://ziglang.org/download/).
+macOS and Linux:
 
 ```
-git clone https://github.com/devvMuhammad/nust-cli
-cd nust-cli
-zig build -Doptimize=ReleaseSmall
+curl -fsSL https://raw.githubusercontent.com/devvMuhammad/nust-cli/main/install.sh | sh
 ```
 
-The program is now at `zig-out/bin/nust`. Copy it somewhere on your PATH.
+Windows (PowerShell):
+
+```
+irm https://raw.githubusercontent.com/devvMuhammad/nust-cli/main/install.ps1 | iex
+```
+
+Open a new terminal afterwards. Run the same line again to update.
 
 ## Use
 
@@ -48,3 +52,7 @@ You can name a course by its code (`CS-405`) or part of its name (`deep`). Run `
 Your password is saved in your system's keychain, or in a private file if there isn't one. When a session runs out, `nust` signs you in again by itself. `nust logout` deletes everything it saved.
 
 This is a personal project, not made by NUST. If Qalam or the LMS changes its pages, some commands may stop working until they're updated.
+
+## Building it yourself
+
+With [Zig 0.17](https://ziglang.org/download/): `zig build -Doptimize=ReleaseSmall`, and the program is in `zig-out/bin/`.
